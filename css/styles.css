@@ -596,6 +596,51 @@ ul {
  .social-icon-foot {
   fill: #ffffff;
 }
+.foot-email-block{
+   margin-left: 93px;
+}
+.foot-email-label{
+   width: 360px;
+   height: 50px;
+   display: inline-flex;
+   align-items: center;
+   background-color: transparent;
+   color: rgba(255, 255, 255, 0.6);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+}
+.foot-email-btn{
+   width: 200px;
+   height: 50px;
+   margin-right: 12px;
+
+   display: inline-flex;
+   align-items: center;
+   text-align: center;
+   background-color: var(--accent-text-color);
+   background: #2196F3;
+   border: 0;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+}
+.foot-email-btn:hover,
+.foot-email-btn:focus{
+   background-color: #188ce8;
+}
+.foot-email-btn-text{
+   font-family: var(--main-fonts);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 30px;
+   color: #fff;
+   margin-left: 30px;
+   margin-right: 10px;
+}
+.foot-email-btn-icon{
+   fill: #fff;
+}
 
 /*modal window*/
 .backdrop {
