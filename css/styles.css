@@ -701,7 +701,6 @@ ul {
 
 }
 .modal-form {
-  text-align: center;
   padding: 40px;
 }
 .form-group {
@@ -712,6 +711,7 @@ ul {
   text-align: left;
   margin-bottom: 6px;
   padding-left: 5px;
+  position: relative;
 }
 .modal-label:nth-last-child() {
   margin-bottom: 0;
@@ -750,6 +750,8 @@ ul {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+.modal-checkbox{
+}
 .modal-licens-text {
   padding-left: 10px;
   font-family: var(--main-fonts);
@@ -769,7 +771,7 @@ ul {
 }
 .modal-form-btn {
   display: block;
-  margin-top: 30px;
+  margin: 30px auto 0;
   width: 200px;
   height: 50px;
 
