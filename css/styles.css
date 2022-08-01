@@ -623,6 +623,7 @@ ul {
   border: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: var(--cubic);
 }
 .foot-email-btn:hover,
 .foot-email-btn:focus {
@@ -694,17 +695,20 @@ ul {
   background-color: transparent;
   cursor: pointer;
 }
+.modal-btn-icon {
+  transition: var(--cubic);
+}
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
+  fill: var(--accent-text-color);
+}
 .modal-title {
   display: block;
   color: #212121;
   text-align: center;
-
 }
 .modal-form {
   padding: 40px;
-}
-.form-group {
-
 }
 .modal-label {
   display: block;
@@ -730,12 +734,23 @@ ul {
   padding-left: 50px;
   width: 100%;
   outline: transparent;
+  transition: var(--cubic);
 }
 .modal-form-icon {
   position: absolute;
   bottom: 10px;
   left: 15px;
+  transition: var(--cubic);
 }
+.modal-label:hover .modal-form-icon,
+.modal-label:focus-within .modal-form-icon {
+  fill: var(--accent-text-color);
+}
+.modal-label:hover .modal-input,
+.modal-label:focus-within .modal-input {
+  border-color: var(--accent-text-color);
+}
+
 .modal-textarea {
   height: 120px;
   width: 450px;
@@ -749,17 +764,37 @@ ul {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  transition: var(--cubic);
 }
-.modal-checkbox{
+.modal-label:hover .modal-textarea,
+.modal-label:focus-within .modal-textarea {
+  border-color: var(--accent-text-color);
+  outline: transparent;
+}
+.modal-checkbox {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.licens-checkbox:checked + .icon-licens .icon-licens-unchecked {
+  opacity: 0;
+  transition: opacity var(--cubic);
+}
+.icon-licens-checked {
+  opacity: 0;
+  transition: opacity var(--cubic);
+}
+.licens-checkbox:checked + .icon-licens .icon-licens-checked {
+  opacity: 1;
 }
 .modal-licens-text {
-  padding-left: 10px;
   font-family: var(--main-fonts);
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  user-select: none;
 }
 .modal-licens-link {
   font-family: var(--main-fonts);
@@ -768,6 +803,7 @@ ul {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #2196f3;
+  text-underline-position: under;
 }
 .modal-form-btn {
   display: block;
@@ -786,6 +822,7 @@ ul {
   line-height: 30px;
   letter-spacing: 0.06em;
   color: #ffffff;
+  transition: var(--cubic);
 }
 .modal-form-btn:hover,
 .modal-form-btn:focus {

@@ -579,6 +579,11 @@
       </div>
     </footer>
 
+    /**
+    |============================
+    | modal window
+    |============================
+    */
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
          <button type="button" class="modal-btn" data-modal-close>
@@ -623,7 +628,11 @@
          </div>
 
             <label class="flex modal-checkbox">
-               <input type="checkbox" name="licens" value=" " checked class=""/>
+               <input type="checkbox" name="licens" value=" " checked class="licens-checkbox visually-hidden"/>
+               <svg class="icon-licens" width="16" height="15">
+               <use class="icon-licens-unchecked" href="./images/icons.svg#icon-first-checkbox"></use>
+               <use class="icon-licens-checked" href="./images/icons.svg#icon-second-checkbox"></use>
+               </svg>
                <span class="modal-licens-text">Соглашаюсь с рассылкой и принимаю 
                   <a href="" class="modal-licens-link">Условия договора</a> 
                </span>
