@@ -22,7 +22,7 @@
   </head>
   <body data-page>
     <header>
-      <div class="container flex">
+      <div class="container flex"> 
       <nav class="flex">
         <a href="index.html" class="logo-head logo" lang="en"
           >Web<span class="logo-head-accent">Studio</span>
@@ -47,6 +47,7 @@
                </svg>+38 096 111 11 11</a>
          </li>
       </ul>
+   </div>
     </header>
 
     <main>
@@ -505,7 +506,7 @@
  
 
       <div  class="foot-rigth-block">
-         <p class="foot-title">присоединяйтесь</з>
+         <p class="foot-title">присоединяйтесь</p>
          <ul class="list flex social-list-foot">
                <li class="social-item">
                   <a 
@@ -563,27 +564,22 @@
       </div>
       <div class="foot-email-block">
             <p class="foot-title">подпишитесь на рассылку</p>
-            <form action="" name="email">
-               <label for="user_email" >
+            <form name="email">
+               <label>
                   <input type="email" name="email" placeholder="E-mail" class="foot-email-label"/>
                </label>
                <button type="submit" class="foot-email-btn">
-                  <p class="foot-email-btn-text">Подписаться</p> 
+                  <span class="foot-email-btn-text">Подписаться</span> 
                   <svg class="foot-email-btn-icon" width="24" height="24">
                      <use href="./images/icons.svg#icon-send"></use>
                   </svg> 
                </button>
             </form>
       </div>
-
       </div>
     </footer>
 
-    /**
-    |============================
-    | modal window
-    |============================
-    */
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
          <button type="button" class="modal-btn" data-modal-close>
