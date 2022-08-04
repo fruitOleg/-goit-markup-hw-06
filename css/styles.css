@@ -719,12 +719,11 @@ ul {
   position: relative;
 }
 .modal-label:nth-child(4) {
-   
   margin-bottom: 20px;
 }
 .modal-text {
-   display: inline-block;
-   margin-bottom: 5px;
+  display: inline-block;
+  margin-bottom: 5px;
   font-family: var(--main-fonts);
   font-weight: 400;
   font-size: 12px;
@@ -741,7 +740,7 @@ ul {
   transition: var(--cubic);
 }
 .modal-form-icon {
-   padding: 11px auto 11px 12px;
+  padding: 11px auto 11px 12px;
   position: absolute;
   bottom: 10px;
   left: 15px;
@@ -783,9 +782,8 @@ ul {
   justify-content: center;
   gap: 10px;
 }
-.modal-checkbox:focus-within{
-   fill: var(--accent-text-color);
-
+.modal-checkbox:focus-within {
+  fill: var(--accent-text-color);
 }
 .licens-checkbox:checked + .icon-licens .icon-licens-unchecked {
   opacity: 0;
