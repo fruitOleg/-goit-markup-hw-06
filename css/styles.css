@@ -783,13 +783,10 @@ ul {
   justify-content: center;
   gap: 10px;
 }
-/**
-|============================
-| .modal-checkbox:focus{
-}
-|============================
-*/
+.modal-checkbox:focus-within{
+   fill: var(--accent-text-color);
 
+}
 .licens-checkbox:checked + .icon-licens .icon-licens-unchecked {
   opacity: 0;
   transition: opacity var(--cubic);
